@@ -1,21 +1,21 @@
 Posición,Equipo,Jugados,Ganados,Empatados,Perdidos,Goles a Favor,Goles en Contra,Diferencia de Goles,Puntos
-1,FC Barcelona,16,12,1,3,48,17,31,37
-2,Real Madrid CF,15,10,3,2,31,13,18,33
-3,Club Atlético de Madrid,15,9,5,1,26,8,18,32
-4,Athletic Club,16,8,5,3,24,15,9,29
-5,Villarreal CF,14,7,5,2,27,23,4,26
-6,RCD Mallorca,16,7,3,6,16,18,-2,24
-7,CA Osasuna,15,6,5,4,20,23,-3,23
-8,Girona FC,15,6,4,5,22,20,2,22
-9,Real Sociedad de Fútbol,15,6,3,6,13,11,2,21
-10,Real Betis Balompié,15,5,5,5,16,18,-2,20
-11,Sevilla FC,15,5,4,6,14,19,-5,19
-12,RC Celta de Vigo,15,5,3,7,23,27,-4,18
-13,Rayo Vallecano de Madrid,14,4,4,6,14,16,-2,16
-14,UD Las Palmas,15,4,3,8,20,26,-6,15
-15,CD Leganés,15,3,6,6,14,20,-6,15
-16,Deportivo Alavés,15,4,2,9,16,25,-9,14
+1,FC Barcelona,17,12,2,3,50,19,31,38
+2,Real Madrid CF,16,11,3,2,34,13,21,36
+3,Club Atlético de Madrid,16,10,5,1,30,11,19,35
+4,Athletic Club,17,9,5,3,26,15,11,32
+5,Villarreal CF,15,7,5,3,27,25,2,26
+6,Real Sociedad de Fútbol,16,7,3,6,16,11,5,24
+7,CA Osasuna,16,6,6,4,22,25,-3,24
+8,RCD Mallorca,17,7,3,7,16,20,-4,24
+9,Girona FC,16,6,4,6,22,23,-1,22
+10,RC Celta de Vigo,16,6,3,7,25,27,-2,21
+11,Real Betis Balompié,16,5,6,5,18,20,-2,21
+12,Rayo Vallecano de Madrid,15,5,4,6,15,16,-1,19
+13,Sevilla FC,16,5,4,7,17,23,-6,19
+14,UD Las Palmas,16,5,3,8,22,27,-5,18
+15,Deportivo Alavés,16,4,3,9,18,27,-9,15
+16,CD Leganés,16,3,6,7,14,23,-9,15
 17,Getafe CF,15,2,7,6,10,13,-3,13
 18,RCD Espanyol de Barcelona,14,4,1,9,15,27,-12,13
-19,Valencia CF,13,2,4,7,13,21,-8,10
-20,Real Valladolid CF,15,2,3,10,10,32,-22,9
+19,Valencia CF,14,2,4,8,13,22,-9,10
+20,Real Valladolid CF,16,2,3,11,11,34,-23,9

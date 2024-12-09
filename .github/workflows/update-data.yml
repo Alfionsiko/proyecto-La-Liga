@@ -25,4 +25,4 @@ jobs:
 
     - name: Run update script
       run: |
-        python update_data.py
+        python actualizar_clasificacion.py

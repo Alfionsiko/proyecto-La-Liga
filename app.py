@@ -25,7 +25,10 @@ def registrar_feedback(feedback):
     global df_feedback
     df_feedback.loc[df_feedback['Feedback'] == feedback, 'Count'] += 1 
     df_feedback.to_csv(feedback_file, index=False)
-    
+
+# Inicializar el estado de feedback 
+if 'feedback_given' not in st.session_state: 
+    st.session_state.feedback_given = False    
 
 # Funcion para colorear columnas:
 def color_columna(column): 
@@ -53,7 +56,7 @@ def main():
             dato_curioso = df2[df2["Equipo"] == equipo]["Dato Curioso"].values[0]
             escudo_path = os.path.join(escudos_dir, f'{equipo}.png') 
             if os.path.exists(escudo_path): 
-                st.image(escudo_path, caption=equipo, width=100) 
+                st.image(escudo_path, caption=equipo, width=300) 
             else: 
                 st.write(f'No se encontró el escudo para {equipo}.')
             st.write(dato_curioso)
@@ -65,12 +68,16 @@ def main():
     st.sidebar.write("Ademas de datos curiosos sobre los equipos de La Liga")
     st.sidebar.write("Espero que te diviertas navegando por ella y no te olvides de puntuarla")
     st.sidebar.title("Feedback")
-    if st.sidebar.button("Me Gusta"):
-        registrar_feedback("Me Gusta")
-        st.sidebar.success("¡Gracias por tu feedback!")
-    if st.sidebar.button("No Me Gusta"):
-        registrar_feedback("No Me Gusta")
-        st.sidebar.success("¡Gracias por tu feedback!")
+    if not st.session_state.feedback_given: 
+        if st.sidebar.button("Me Gusta"): 
+            registrar_feedback("Me Gusta") 
+            st.sidebar.success("¡Gracias por tu feedback!") 
+            st.session_state.feedback_given = True 
+        if st.sidebar.button("No Me Gusta"): 
+            registrar_feedback("No Me Gusta") 
+            st.sidebar.success("¡Gracias por tu feedback!") 
+            st.session_state.feedback_given = True 
+    else: st.sidebar.write("Ya has enviado tu feedback. ¡Gracias!")
 
     st.sidebar.write("Feedback recibido:") 
     st.sidebar.dataframe(df_feedback)

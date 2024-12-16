@@ -1,4 +1,4 @@
-name: Actualizar datos de la app
+name: Actualizar datos
 
 on:
   push:

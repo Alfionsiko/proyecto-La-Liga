@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 name: Actualizar datos de la app
+=======
+name: Actualizar datos
+>>>>>>> 47927a3de2a3aa752656524c7a411b1122843623
 
 on:
   push:
@@ -25,4 +29,8 @@ jobs:
 
     - name: Run update script
       run: |
+<<<<<<< HEAD
         python actualizar_clasificacion.py
+=======
+        python actualizar_clasificacion.py
+>>>>>>> 47927a3de2a3aa752656524c7a411b1122843623
